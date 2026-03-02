@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9899f9a1d5d1e4982602f0c2cad00d, type: 3}
+  m_Name: CastleRoom
+  m_EditorClassIdentifier: Assembly-CSharp::MapSO
+  prefab: {fileID: 3865342981843883802, guid: 63eae00120d549e4db03eb023cdba945, type: 3}
+  mapID: 4
+  mapName: CastleRoom
+  entryPoints:
+  - entryPointID: 0
+    cell: {x: 0, y: -2, z: 0}
+    targetState: 4

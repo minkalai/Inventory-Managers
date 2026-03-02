@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9899f9a1d5d1e4982602f0c2cad00d, type: 3}
+  m_Name: EnemyForest2
+  m_EditorClassIdentifier: Assembly-CSharp::MapSO
+  prefab: {fileID: 6352480341024076430, guid: fbbc63ac25b4f3646a8893348aba42c5, type: 3}
+  mapID: 6
+  mapName: EnemyForest2
+  entryPoints:
+  - entryPointID: 0
+    cell: {x: 10, y: -5, z: 0}
+    targetState: 6

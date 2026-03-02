@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9899f9a1d5d1e4982602f0c2cad00d, type: 3}
+  m_Name: Town1
+  m_EditorClassIdentifier: Assembly-CSharp::MapSO
+  prefab: {fileID: 5141263064442993475, guid: f37fa79845a4aab40a5dd5cadcbd1800, type: 3}
+  mapID: 1
+  mapName: Town1
+  entryPoints:
+  - entryPointID: 0
+    cell: {x: -6, y: -18, z: 0}
+    targetState: 5
+  - entryPointID: 1
+    cell: {x: -12, y: -20, z: 0}
+    targetState: 7
+  - entryPointID: 2
+    cell: {x: 1, y: -21, z: 0}
+    targetState: 5

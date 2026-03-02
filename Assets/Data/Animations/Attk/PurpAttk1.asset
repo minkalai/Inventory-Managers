@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1443527d2b37efa4a9ca365a5d0b3795, type: 3}
+  m_Name: PurpAttk1
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationData
+  animationName: PurpAttck1
+  frames:
+  - {fileID: -1991941576, guid: d872b3a3a05beba45a761a6b770ff163, type: 3}
+  - {fileID: 556835833, guid: f237011e819480e489ab46ea04e00be0, type: 3}
+  - {fileID: -1493444075, guid: 4e940dc8f8927f342813284ec7044fec, type: 3}
+  - {fileID: -1225753683, guid: 41a1d549a9b5d2a48b52866463e02b89, type: 3}
+  - {fileID: 454133245, guid: e49809137b65573489b65712b5638bf6, type: 3}
+  - {fileID: 1426625771, guid: 914112412fbf384449552e91e1444581, type: 3}
+  frameDelay: 0
