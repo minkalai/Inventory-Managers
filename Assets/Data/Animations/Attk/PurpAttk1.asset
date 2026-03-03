@@ -20,4 +20,11 @@ MonoBehaviour:
   - {fileID: -1225753683, guid: 41a1d549a9b5d2a48b52866463e02b89, type: 3}
   - {fileID: 454133245, guid: e49809137b65573489b65712b5638bf6, type: 3}
   - {fileID: 1426625771, guid: 914112412fbf384449552e91e1444581, type: 3}
-  frameDelay: 0
+  - {fileID: -1991941576, guid: d872b3a3a05beba45a761a6b770ff163, type: 3}
+  - {fileID: 556835833, guid: f237011e819480e489ab46ea04e00be0, type: 3}
+  - {fileID: -1493444075, guid: 4e940dc8f8927f342813284ec7044fec, type: 3}
+  - {fileID: -1225753683, guid: 41a1d549a9b5d2a48b52866463e02b89, type: 3}
+  - {fileID: 454133245, guid: e49809137b65573489b65712b5638bf6, type: 3}
+  - {fileID: 1426625771, guid: 914112412fbf384449552e91e1444581, type: 3}
+  frameDelay: 0.02
+  loop: 0
