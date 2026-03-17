@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class GameStateManager : MonoBehaviour
 {
 	[SerializeField] Button Resume, SaveExit;
-	[SerializeField] GameObject pausePanel;
-	public bool isPaused;
+	[SerializeField] GameObject pausePanel, inventoryPanel; //, gameCanvas;
+	public bool isPaused, inventoryOpen;
 
 	public static GameStateManager Instance;
 	//public List<MapState> mapStates = new List<MapState>();
@@ -17,6 +17,8 @@ public class GameStateManager : MonoBehaviour
 	private EnemySpawner spawner;
 	public int currentMapID;
 	private MapState currentMapState;
+
+	InventoryUIManager inventory;
 
 	private void Awake()
 	{
@@ -104,6 +106,23 @@ public class GameStateManager : MonoBehaviour
 		Time.timeScale = 1f;
 		isPaused = false;
 	}
+
+	public void InvOpen()
+	{
+		//gameCanvas.SetActive(false);
+		inventoryPanel.SetActive(true);
+		Time.timeScale = 0f;
+		inventoryOpen = true;
+		inventory.InitUI();
+	}
+
+	public void InvClose()
+	{
+		///gameCanvas.SetActive(true);
+		inventoryPanel.SetActive(false);
+		Time.timeScale = 1f;
+		inventoryOpen = false;
+	}
 	// Update is called once per frame
 	void Update()
 	{
@@ -113,6 +132,18 @@ public class GameStateManager : MonoBehaviour
 				ResumeGame();
 			else
 				onPause();
+		}
+
+		if (Input.GetKeyDown(KeyCode.Q))
+		{
+			if (inventoryOpen)
+			{
+				InvClose();
+			}
+			else
+			{
+				InvOpen();
+			}
 		}
 	}
 	public void ExitGame()
