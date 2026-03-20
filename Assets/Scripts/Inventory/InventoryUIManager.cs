@@ -15,6 +15,12 @@ public class InventoryUIManager : MonoBehaviour
         {
             GameObject tmp = Instantiate(buttonPrefab, contentParent);
             tmp.GetComponent<InventoryButton>().InitializeButton(item);
-        }
-    }
+			Debug.Log("Inventory count: " + inventoryRef.Count);
+		}
+
+		//foreach (Transform child in contentParent)
+		//{
+		//	Destroy(child.gameObject);
+		//}
+	}
 }

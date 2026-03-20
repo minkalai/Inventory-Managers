@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class GameStateManager : MonoBehaviour
 {
 	[SerializeField] Button Resume, SaveExit;
-	[SerializeField] GameObject pausePanel, inventoryPanel; //, gameCanvas;
+	[SerializeField] GameObject pausePanel, inventoryPanel, healthPanel, gameCanvas;
+	[SerializeField] InventoryUIManager inventory;
 	public bool isPaused, inventoryOpen;
 
 	public static GameStateManager Instance;
@@ -18,7 +19,7 @@ public class GameStateManager : MonoBehaviour
 	public int currentMapID;
 	private MapState currentMapState;
 
-	InventoryUIManager inventory;
+
 
 	private void Awake()
 	{
@@ -109,7 +110,8 @@ public class GameStateManager : MonoBehaviour
 
 	public void InvOpen()
 	{
-		//gameCanvas.SetActive(false);
+		gameCanvas.SetActive(false);
+		healthPanel.SetActive(false);
 		inventoryPanel.SetActive(true);
 		Time.timeScale = 0f;
 		inventoryOpen = true;
@@ -118,7 +120,8 @@ public class GameStateManager : MonoBehaviour
 
 	public void InvClose()
 	{
-		///gameCanvas.SetActive(true);
+		gameCanvas.SetActive(false);
+		healthPanel.SetActive(true);
 		inventoryPanel.SetActive(false);
 		Time.timeScale = 1f;
 		inventoryOpen = false;
