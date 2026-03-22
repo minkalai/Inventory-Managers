@@ -27,13 +27,15 @@ public class MeleeEnemy : Enemy
 	//    throw new System.NotImplementedException();
 	//}
 
+	public PlayerController player;
+
 	public override void Attack()
 	{
-		throw new System.NotImplementedException();
+		player.healthbar -= 10;
 	}
 
 	public override void Die()
 	{
-		throw new System.NotImplementedException();
+		this.gameObject.SetActive(false);
 	}
 }

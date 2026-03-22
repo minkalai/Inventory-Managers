@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Treasure
   - Tavern
+  - KingTreasure
   layers:
   - Default
   - TransparentFX

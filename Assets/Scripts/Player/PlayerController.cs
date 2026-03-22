@@ -6,6 +6,7 @@ using UnityEngine.Tilemaps;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] public TextMeshProUGUI coins, health;
+	public TreasureInventory inventory;
 	//[SerializeField] public EnemySpawner reset;
     public int coinCount, healthbar, maxHealth;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -56,6 +57,18 @@ public class PlayerController : MonoBehaviour
 			//reset.ResetAllEnemyHealth();
 			GameStateManager.Instance.ResetEnemies();
 			GameStateManager.Instance.InitializeMap(GameStateManager.Instance.currentMapID);
+		}
+
+		if(collision.tag == "KingTreasure")
+		{
+			if (Input.GetKeyDown(KeyCode.R))
+			{
+				inventory.InvActive();
+			}
+			else
+			{
+				inventory.InvInactive();
+			}
 		}
 	}
 }
