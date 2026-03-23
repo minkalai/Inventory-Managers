@@ -8,6 +8,7 @@ TagManager:
   - Tavern
   - KingTreasure
   - Enemy
+  - BossTreasure
   layers:
   - Default
   - TransparentFX

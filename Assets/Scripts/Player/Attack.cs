@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    private MeleeEnemy enemy;
+    private Enemy enemy;
     int dammage;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -12,8 +12,11 @@ public class Attack : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (collision.tag == "Enemy")
+        Debug.Log("Attack triggered");
+		if (collision.CompareTag("Enemy"))
         {
+            enemy = collision.GetComponent<Enemy>();
+            Debug.Log("Enemy Hit");
             enemy.TakeDamage(dammage);
         }
 	}
