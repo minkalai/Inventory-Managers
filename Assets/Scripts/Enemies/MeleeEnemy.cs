@@ -27,7 +27,7 @@ public class MeleeEnemy : Enemy
 	//    throw new System.NotImplementedException();
 	//}
 
-	public PlayerController player;
+	private PlayerController player;
 
 	public override void Attack()
 	{
@@ -36,6 +36,10 @@ public class MeleeEnemy : Enemy
 
 	public override void Die()
 	{
-		this.gameObject.SetActive(false);
+		if (HP >= 0)
+		{
+			this.gameObject.SetActive(false);
+		}
+		
 	}
 }

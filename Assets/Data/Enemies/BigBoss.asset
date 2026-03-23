@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a61342d20c835249ad0b3ed175399ce, type: 3}
+  m_Name: BigBoss
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySO
+  prefab: {fileID: 8794355827053557862, guid: ef2011ad475843942951b84d5e2794ed, type: 3}
+  HP: 200
+  ATK: 30
+  DEF: 50
