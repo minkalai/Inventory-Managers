@@ -4299,6 +4299,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8234731534109831170, guid: ef2011ad475843942951b84d5e2794ed, type: 3}
+      propertyPath: treasure
+      value: 
+      objectReference: {fileID: 2921653957836424807}
+    - target: {fileID: 8234731534109831170, guid: ef2011ad475843942951b84d5e2794ed, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}

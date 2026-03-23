@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class MeleeEnemy : Enemy
@@ -28,7 +29,12 @@ public class MeleeEnemy : Enemy
 	//}
 
 	//public PlayerController player;
+	[SerializeField] public GameObject treasure;
 
+	private void Start()
+	{
+		treasure.SetActive(false);
+	}
 	public override void Attack()
 	{
 		PlayerController.instance.healthbar -= 10;
@@ -39,6 +45,7 @@ public class MeleeEnemy : Enemy
 		if (HP >= 0)
 		{
 			this.gameObject.SetActive(false);
+			treasure.SetActive(true);
 		}
 		
 	}
