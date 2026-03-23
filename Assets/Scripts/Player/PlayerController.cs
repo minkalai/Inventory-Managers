@@ -7,10 +7,16 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] public TextMeshProUGUI coins, health;
 	public TreasureInventory inventory;
+	public static PlayerController instance;
 	//[SerializeField] public EnemySpawner reset;
     public int coinCount, healthbar, maxHealth;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+	// Start is called once before the first execution of Update after the MonoBehaviour is created
+
+	private void Awake()
+	{
+		instance = this;
+	}
+	void Start()
     {
         coinCount = 0;
         coins.text = coinCount.ToString();

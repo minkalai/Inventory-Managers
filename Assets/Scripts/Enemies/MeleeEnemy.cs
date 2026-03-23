@@ -27,11 +27,11 @@ public class MeleeEnemy : Enemy
 	//    throw new System.NotImplementedException();
 	//}
 
-	private PlayerController player;
+	//public PlayerController player;
 
 	public override void Attack()
 	{
-		player.healthbar -= 10;
+		PlayerController.instance.healthbar -= 10;
 	}
 
 	public override void Die()

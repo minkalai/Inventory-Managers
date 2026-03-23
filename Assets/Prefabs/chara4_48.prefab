@@ -25,9 +25,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3049849173357612797}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.362776, y: 2.1248076, z: 0}
-  m_LocalScale: {x: 0.3154574, y: 0.3154574, z: 0.3154574}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1581304251688280480}
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10bf8d0900e684b47be91f566218a101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CircleOverlap
-  radius: 1
+  radius: 1.25
   tagToCheck: Player
   color: {r: 0.67591953, g: 0, b: 1, a: 1}
 --- !u!1 &5967084164193305986
@@ -72,9 +72,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5967084164193305986}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.362776, y: 2.1248076, z: 0}
-  m_LocalScale: {x: 0.3154574, y: 0.3154574, z: 0.3154574}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1581304251688280480}
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10bf8d0900e684b47be91f566218a101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CircleOverlap
-  radius: 4
+  radius: 8.13
   tagToCheck: Player
   color: {r: 1, g: 0.17544733, b: 0, a: 1}
 --- !u!1 &8794355827053557862
@@ -204,7 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIMovement
   range: 4
-  moveSpeed: 6
+  moveSpeed: 5.4
 --- !u!114 &8234731534109831170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,14 +219,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MeleeEnemy
   enemyID: 1
   maxHP: 0
-  HP: 0
+  HP: 200
   ATK: 0
   DEF: 0
-  attackDelay: 0
+  attackDelay: 8
   sightline: {fileID: 2246568124742175356}
   attackRange: {fileID: 7347960578601320787}
   patrolRange: {x: 0, y: 0}
-  player: {fileID: 0}
 --- !u!50 &5471803000732820439
 Rigidbody2D:
   serializedVersion: 5
@@ -242,7 +241,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
