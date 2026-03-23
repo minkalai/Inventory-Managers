@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 3533386804776575387}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -204,6 +204,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ca5792e1bc6bd248b1ff965c0031760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RangeEmeny
+  enemyID: 0
+  maxHP: 0
   HP: 10
   ATK: 0
   DEF: 0

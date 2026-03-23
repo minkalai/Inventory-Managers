@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    public Enemy enemy;
+    private Enemy enemy;
     int dammage;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
