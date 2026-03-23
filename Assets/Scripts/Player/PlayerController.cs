@@ -22,7 +22,25 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (inventory != null)
+		{
+			if (Input.GetKeyDown(KeyCode.R))
+			{
+				if (inventory.tresOpen)
+				{
+					inventory.InvInactive();
+				}
+				else
+				{
+					inventory.InvActive();
+				}
+				
+			}
+			//else
+			//{
+			//	inventory.InvInactive();
+			//}
+		}
     }
 
 	//private void OnTriggerEnter(Collider other)
@@ -59,16 +77,23 @@ public class PlayerController : MonoBehaviour
 			GameStateManager.Instance.InitializeMap(GameStateManager.Instance.currentMapID);
 		}
 
-		if(collision.tag == "KingTreasure")
+		if(triggerObject.tag == "KingTreasure")
 		{
-			if (Input.GetKeyDown(KeyCode.R))
-			{
-				inventory.InvActive();
-			}
-			else
-			{
-				inventory.InvInactive();
-			}
+
+			inventory = collision.gameObject.GetComponent<TreasureInventory>();
+			
+		}
+	}
+
+	private void OnTriggerExit2D(Collider2D collision)
+	{
+		GameObject triggerObject = collision.gameObject;
+
+		if (triggerObject.tag == "KingTreasure")
+		{
+
+			inventory = null;
+
 		}
 	}
 }
