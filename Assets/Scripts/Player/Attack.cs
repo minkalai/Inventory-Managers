@@ -14,6 +14,8 @@ public class Attack : MonoBehaviour
 	{
         Debug.Log("Attack triggered");
 		if (collision.CompareTag("Enemy"))
+
+
         {
             enemy = collision.GetComponent<Enemy>();
             Debug.Log("Enemy Hit");
